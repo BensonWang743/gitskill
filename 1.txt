@@ -1,1 +1,3 @@
 create a new branch is simple and quick!
+new function in dev branch
+
