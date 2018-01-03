@@ -29,6 +29,7 @@ namespace JsllDataProcessHelper
 
             // HeadEvent Data
             schema.Add(new ColumnInfo("Author", ColumnDataType.String));
+	    schema.Add(new ColumnInfo("Author", ColumnDataType.String));
             schema.Add(new ColumnInfo("Contentlang", ColumnDataType.String));
             schema.Add(new ColumnInfo("cpnid", ColumnDataType.String));
 
