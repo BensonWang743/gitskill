@@ -343,6 +343,7 @@ namespace JsllDataProcessHelper
                         Number = number,
                         Title = title,
                         User = user,
+			User = user,
                         Author_Association = author_Association,
                         Url = string.Format("https://github.com/{0}/issues/{1}#issuecomment-{2}", repo, number.ToString(), id.ToString()).ToLower(),
                         EventDateTime = e["server_utc_datetime"].DateTime
