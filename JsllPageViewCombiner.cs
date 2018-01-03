@@ -1197,7 +1197,7 @@ namespace JsllDataProcessHelper
             Regex techNetF1 = new Regex(@"^technet\.microsoft\.com/query/");
             Regex docsF1 = new Regex(@"^docs\.microsoft\.com.*\?f1url=");
             string url = string.Format("{0}{1}{2}", head["enrich_url_pg_domain"].String, head["enrich_url_pg_uri_stem"] != null && !string.IsNullOrEmpty(head["enrich_url_pg_uri_stem"].String) ? head["enrich_url_pg_uri_stem"].String:string.Empty, head["enrich_url_pg_query_string"] != null && !string.IsNullOrEmpty(head["enrich_url_pg_query_string"].String) ? head["enrich_url_pg_query_string"].String : string.Empty);
-
+2
             if (msdnF1.Match(url).Success || techNetF1.Match(url).Success || docsF1.Match(url).Success)
                 outputRow["IsF1Query"].Set(true);
             else
