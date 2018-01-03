@@ -17,6 +17,7 @@ namespace JsllDataProcessHelper
         {
             Schema schema = new Schema();
             // Identifiers
+1
             schema.Add(new ColumnInfo("Anid", ColumnDataType.String) { Source = leftSchema[leftSchema["Anid"]] });
             schema.Add(new ColumnInfo("ContentId", ColumnDataType.String) { Source = leftSchema[leftSchema["ContentId"]] });
             schema.Add(new ColumnInfo("head_event_id", ColumnDataType.String));
